@@ -5,10 +5,12 @@ Attached to this lab is the file 'HAL.cap'.  This file contains a captured WPA h
 ```
 aircrack-ng --b F8:32:E4:52:CA:F8 -w /usr/share/wordlists/rockyou.txt ~/Downloads/HAL.cap. 
 ```
-<img src="https://i.imgur.com/KfZ0GWU.png"/> 1
+<img src="https://i.imgur.com/KfZ0GWU.png"/>
 
 This is a screen capture of the command executing in aircrack-ng.
-<img src="https://i.imgur.com/FtVupBA.png"/> 2
+
+<img src="https://i.imgur.com/FtVupBA.png"/>
 
 This is the successful cracking of the PSK, which is “huskersare#1”.
-<img src="https://i.imgur.com/2pMchnV.png"/> 3
+
+<img src="https://i.imgur.com/2pMchnV.png"/>
