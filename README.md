@@ -9,6 +9,8 @@
 - **shodan.io**
 - **Z shell (zsh)**
 - **aircrack-ng**
+- **enum4linux**
+- **legion**
 - 
 
 ## Environments Used
