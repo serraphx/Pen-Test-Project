@@ -1,0 +1,69 @@
+Open Source Collection
+# Description
+
+Answer each question using research you conduct on the web and using various information gathering tools.  Remember, this is passive collection, you will only need an internet connected computer to answer the below.  Provide both the answer, a description of your process to find the information, and any applicable screen shots.
+
+### 1. What is the domain name for Happy Accident Labs?
+- www.happyaccidentlabs.com
+- This was gathering utilizing a google search of “happy accident labs”
+
+### 2. Who is the domain name provider?
+- GoDaddy.com
+- This was researched utilizing lookup.icann.org/en/lookup of happyaccidentlabs.com, which revealed godaddy.com as the name provider. This is also confirmed using the “whois” command in kali linux terminal.
+
+### 3. Do they have an email provider or do they provide this service internally?  If external who is the provider?
+- They do not have an internal email, they utilize an external email provider, which is mailgun.com.
+- Two servers are listed, mxa.mailgun.org and mxb.mailgun.org
+- This was found using the mxtoolbox.com website with the search of happyaccidentlabs.com
+
+### 3. Who might be a good technical point of contact?
+- Sarah Russell
+- russells@happyaccidentlabs.com
+- This was found using the careers page of happaccidentlabs.com webpage.
+
+### 4### . What might be the address of their company?  Phone number(s)?
+- 222 S. 15th St, Omaha NE
+- 402-915-0985 (from waybackmachine results for happyaccidentlabs.com/careers)
+- This was found using the main and careers page of happaccidentlabs.com webpage.
+
+### 5. What type of building are they in?
+- They are located in Central Park Plaza, which is a commercial office complex. 
+- I first used google maps to located the address, then viewed the address in streetview. Noticed the same of the building, and googled for information regarding the building itself. From Wikipedia: Central Park Plaza is a 15-story, commercial office complex in Downtown Omaha, Nebraska. The complex consists 419,679 square feet (38,989.5 m2) of office space, in two red brick towers with a lower level center connector on the first and second floors. Also contains Starbucks and Sullivan’s Steakhouse.
+
+### 6. What is the area like around their offices?  Can you think of any opportunities for Social Engineering encounters?
+- It is located in Downtown Omaha, which is full of commercial buildings.
+- There is Starbucks around the office, which would be an interesting place to possible interact with staff from the office. There is also the steakhouse, again providing a means of eavesdropping as well.
+- Google maps revealed these two locations that are in the same building as the lab.
+
+### 7. Are there any email addresses you found?
+- russells@happyaccidentlabs.com
+- This was found using the careers page of happaccidentlabs.com webpage.
+
+### 8. Do you know anything about their network or potential access to their network?
+- The IP address for happyaccident labs is 72.167.59.89. This ip is using apache, which if it has not been updated or configured properly may prove to be a viable means of entry.
+- This was found using the nslookup of happyaccidentlabs.com.
+- The network address range is 10.19.99.1 - 10.19.99.99, which was provided by the client. The test is to be confined to that network range only, though outsourced services can be viewed only.
+
+### 9. Did you find any other potentially useful information?
+- On a google search, I did discover a blog that users can post to, http://happyaccidentlabs.com/blog-post-title/. 
+- The following was discovered from builtwith.com:
+   * Frameworks:
+     - Organization Schema
+     - PHP
+   * Content Management System
+     - WordPress
+   * Javascript Library
+     - jQuery
+   * Web Server
+     - Apache
+   * Document Standards
+     - HTML5 DocType
+     - Friends Network (XHTML Friends)
+     - Meta Robot tag
+     - Embed
+     - Windows 8 pinning
+     - Microdata
+     - WAI-ARIA
+     - Srcset
+     - HTTP2
+- <img src="***"/>
