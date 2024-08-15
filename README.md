@@ -11,6 +11,10 @@
 - **aircrack-ng**
 - **enum4linux**
 - **legion**
+- **OpenVAS**
+- **NVD database**
+- **CVE database**
+- **nbtscan**
 - 
 
 ## Environments Used
