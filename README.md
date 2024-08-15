@@ -20,5 +20,3 @@
 - **VMWare**
 
 ## Walk-through of project:
-
-<img src="https://i.imgur.com/62TgaWL.png"/>
