@@ -18,7 +18,7 @@ Command to enumerate users with nmap.
 nmap --script smb-enum-users -p 445 10.19.99.5-20
 ```
 
-Output scan data file.
+Output data to scan file.
 ```zsh
 nbtscan 10.19.99.5-20 > HAL_scan
 ```
