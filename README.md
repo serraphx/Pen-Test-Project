@@ -15,6 +15,8 @@
 - **NVD database**
 - **CVE database**
 - **nbtscan**
+- **metasploit**
+- **john the ripper**
 - 
 
 ## Environments Used
