@@ -17,6 +17,7 @@
 - **nbtscan**
 - **metasploit**
 - **john the ripper**
+- **netcat**
 - 
 
 ## Environments Used
