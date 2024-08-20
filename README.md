@@ -10,14 +10,15 @@
 - **Z shell (zsh)**
 - **aircrack-ng**
 - **enum4linux**
-- **legion**
+- **Legion**
 - **OpenVAS**
 - **NVD database**
 - **CVE database**
 - **nbtscan**
-- **metasploit**
-- **john the ripper**
-- **netcat**
+- **Metasploit**
+- **Metepreter**
+- **John the ripper**
+- **Netcat**
 - 
 
 ## Environments Used
