@@ -1,5 +1,4 @@
-# Retaining Access and Covering Tracks - Penetration Testing Lab
-
+# Retaining Access
 
 ## Discription
 This lab focuses on the critical aspect of penetration testing: retaining access and covering tracks after successfully infiltrating a system. The objective is to install a backdoor to maintain access, even if the initial vulnerability is patched or discovered by the target organization. This lab utilizes tools like Netcat (nc) and the Meterpreter shell in Kali Linux.
