@@ -30,13 +30,13 @@ This term project takes a scenario of a start-up called Happy Accident Labs, tha
 - **VMWare**
 
 ## Walk-through of project:
-1. OSINT
-2. Wireless penetration
-3. Scanning and enumeration
-4. Vulnerability scanning
-5. Automating testing
-6. Password attacks
-7. Retaining access
-8. Risk analysis
-9. IOC report
-10. Final report
+1. **OSINT**
+2. **Wireless penetration**
+3. **Scanning and enumeration**
+4. **Vulnerability scanning**
+5. **Automating testing**
+6. **Password attacks**
+7. **Retaining access**
+8. **Risk analysis**
+9. **IOC report**
+10. **Final report**
